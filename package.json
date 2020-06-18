@@ -1,0 +1,19 @@
+{
+  "name": "css_nexter",
+  "version": "1.0.0",
+  "description": "Building a website for a fictional real estate company. This project mainly focuses on CSS flexbox and grid layouts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinBalejko/CSS_Nexter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinBalejko/CSS_Nexter/issues"
+  },
+  "homepage": "https://github.com/MarcinBalejko/CSS_Nexter#readme"
+}
