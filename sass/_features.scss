@@ -2,16 +2,25 @@
   grid-column: center-start / center-end;
   margin: 15rem 0;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  // ^^ autofit creates as many tracks as we can fit based on the width
-  // so it kind of makes it responsive even without any media queries
-  // grid-template-rows: auto auto;  default
-  grid-gap: 6rem;
-  align-items: start;
+  @supports (display: grid) {
+    //^^ if the browser supports css grid then we want it to execute this code below
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+  }
 }
 
 .feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
