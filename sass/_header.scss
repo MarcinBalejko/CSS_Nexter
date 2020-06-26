@@ -54,7 +54,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
     justify-items: center;
-    align-items: center; // individual item in each cell
+    align-items: center;
 
     img {
       max-height: 2.5rem;
